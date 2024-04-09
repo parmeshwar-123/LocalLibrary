@@ -17,7 +17,7 @@ const catalogRouter = require("./routes/catalog")
 const app = express();
 
 // Connect to Database
-mongoose.connect(process.env.DB_CONNECTION)
+mongoose.connect(process.env.MONGO_DB)
     .then(() => console.log('Database connected successfully'))
     .catch((err) => console.error(err));
 
